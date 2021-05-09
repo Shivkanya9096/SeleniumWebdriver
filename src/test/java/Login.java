@@ -35,7 +35,7 @@ public class Login {
 	public void EnetrCred() {
 		WebElement email= driver.findElement(By.xpath("//input[@type='email']"));
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(email));
-		email.sendKeys("jadhav.shivkanya09@gmail.com");
+		email.sendKeys("user.test@gmmail.com");
 
 		WebElement nextButton= driver.findElement(By.xpath("//div[@class='VfPpkd-RLmnJb']"));
 		if(nextButton.isDisplayed()) {
@@ -48,7 +48,7 @@ public class Login {
 		boolean isPass= false;
 		try {
 			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(passwrd));
-			passwrd.sendKeys("Shiv@12346");
+			passwrd.sendKeys("ABC@12346");
 			WebElement validationMsg= driver.findElement(By.xpath("//span[contains(text(),'Wrong password. Try again or click "
 					+ "Forgot password to reset it.')]"));
 
