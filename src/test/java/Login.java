@@ -30,7 +30,7 @@ public class Login {
 		driver.manage().window().maximize();
 		driver.get("http://www.gmail.com/");
 	}
-
+	//Actual Test
 	@Test	 
 	public void EnetrCred() {
 		WebElement email= driver.findElement(By.xpath("//input[@type='email']"));
